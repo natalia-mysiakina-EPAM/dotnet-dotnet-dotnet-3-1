@@ -16,11 +16,9 @@ namespace aspnetapp.Pages
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
-        private readonly ILogger<ErrorModel> _logger;
-
         public ErrorModel(ILogger<ErrorModel> logger)
         {
-            _logger = logger;
+           // Empty because it is just an empty application
         }
 
         public void OnGet()
